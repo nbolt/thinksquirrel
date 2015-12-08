@@ -54,8 +54,7 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url(/type/montserrat/Montserrat-Bold.otf) format(woff);
-  font-weight: 700;
+  src: url(/type/montserrat/Montserrat-Book.otf) format(woff);
 }
 
 html, body {
@@ -71,9 +70,9 @@ html, body {
   padding: 14px 0;
   margin: auto;
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 600;
   font-size: .8em;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .button.purple {
@@ -92,7 +91,7 @@ html, body {
 
 .block .content > .title {
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.8em;
   text-align: center;
 }
@@ -136,7 +135,7 @@ html, body {
 
 #block-0 #header .links .link {
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
   vertical-align: top;
   margin: 0 12px;
@@ -168,7 +167,7 @@ html, body {
   margin-top: 30px;
   font-size: 2.8em;
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #subscribe-container h2 {
@@ -218,12 +217,46 @@ html, body {
 }
 
 #block-5 .section .title {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: 600;
   color: hsl(255, 31%, 58%);
-  font-size: 1em;
+  font-size: 0.85em;
   margin-left: 20px;
+  text-transform: uppercase;
+}
+
+#block-5 .section .links {
+  margin: 20px 0 0 20px;
+}
+
+#block-5 .section .links a {
+  text-decoration: none;
+}
+
+#block-5 .section .links .link {
+  margin: 12px 0;
+  height: 24px;
+}
+
+#block-5 .section .links .link .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+}
+
+#block-5 .section .links .link .text {
+  font-family: Montserrat;
+  color: hsl(255, 31%, 58%);
+  font-size: 1.1em;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -3px;
+  transition: color .4s ease-in-out;
+}
+
+#block-5 .section .links .link:hover .text {
+  color: hsl(255, 31%, 70%);
 }
 
 #block-5 .divider {
@@ -243,6 +276,6 @@ html, body {
   margin-left: -155px;
 }
 
-#block-5 img {
+#block-5 .logo {
   margin-top: 66px;
 }
