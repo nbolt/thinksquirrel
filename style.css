@@ -80,6 +80,10 @@ html, body {
   background-color: hsl(255, 31%, 58%);
 }
 
+.block {
+  position: relative;
+}
+
 .block .content {
   width: 870px;
   margin: auto;
@@ -183,6 +187,27 @@ html, body {
   background-color: hsl(255, 31%, 61%);
 }
 
-#block-4 {
-  border-bottom: 0;
+#block-2 {
+  height: 511px;
+  background-image: url(/images/pattern2.png);
+  background-repeat: true;
+}
+
+#block-5 {
+  height: 363px;
+  background-image: url(/images/pattern5.png);
+  background-repeat: true;
+}
+
+#block-5 #footnote {
+  font-family: Roboto Slab;
+  color: hsl(210, 1%, 67%);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -155px;
+}
+
+#block-5 img {
+  margin-top: 100px;
 }
