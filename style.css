@@ -1,0 +1,188 @@
+@keyframes fadein {
+  from {opacity: 0}
+  to   {opacity: 1}
+}
+
+@-moz-keyframes fadein {
+  from {opacity: 0}
+  to   {opacity: 1}
+}
+
+@-webkit-keyframes fadein {
+  from {opacity: 0}
+  to   {opacity: 1}
+}
+
+@keyframes fadeout {
+  from {
+    filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+  to   {
+    filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+
+@-moz-keyframes fadeout {
+  from {
+    filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+  to   {
+    filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+  to   {
+    filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/type/montserrat/Montserrat-Bold.otf) format(woff);
+  font-weight: 700;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.button {
+  width: 230px;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0;
+  margin: auto;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 3px;
+}
+
+.button.purple {
+  background-color: hsl(255, 31%, 58%);
+}
+
+.block .content {
+  width: 870px;
+  margin: auto;
+  padding: 45px;
+}
+
+.block .title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 2.8em;
+  text-align: center;
+}
+
+.block.odd, .block .odd {
+  background-color: hsl(0, 0%, 98%);
+  border-top: thin solid hsl(0, 0%, 87%);
+  border-bottom: thin solid hsl(0, 0%, 87%);
+}
+
+#block-0 {
+  background-image: url(/images/stock.png);
+  background-size: cover;
+  height: 555px;
+}
+
+#block-0 #header-container {
+  width: 1040px;
+  margin: auto;
+}
+
+#block-0 #header {
+  height: 64px;
+  padding-top: 25px;
+}
+
+#block-0 .hr {
+  border-bottom: 2px solid white;
+  opacity: 0.5;
+}
+
+#block-0 #header #logo {
+  width: 301px;
+  height: 46px;
+}
+
+#block-0 #header .links {
+  float: right;
+  margin-top: 12px;
+}
+
+#block-0 #header .links .link {
+  font-family: Montserrat;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#block-0 #header .links .link:hover, #block-0 #header .links .link.active {
+  opacity: 1;
+}
+
+#block-0 #header .links .link .text {
+  font-size: 1.25em;
+}
+
+#block-0 #header .links a {
+  text-decoration: none;
+  color: white;
+}
+
+#subscribe-container {
+  width: 620px;
+  margin: 0px auto;
+  color: white;
+  text-align: center;
+}
+
+#subscribe-container h1 {
+  margin-top: 30px;
+  font-size: 2.8em;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+#subscribe-container h2 {
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+#subscribe-container .button {
+  margin-top: 50px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#subscribe-container .button:hover {
+  cursor: pointer;
+  background-color: hsl(255, 31%, 61%);
+}
+
+#block-4 {
+  border-bottom: 0;
+}
