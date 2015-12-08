@@ -90,7 +90,7 @@ html, body {
   padding: 45px;
 }
 
-.block .title {
+.block .content > .title {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 2.8em;
@@ -199,6 +199,41 @@ html, body {
   background-repeat: true;
 }
 
+#block-5 .content {
+  width: 1030px;
+}
+
+#block-5 .section {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 34px;
+}
+
+#block-5 .section.mid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {
+  width: 200px;
+}
+
+#block-5 .section.end {
+  width: 300px;
+}
+
+#block-5 .section .title {
+  letter-spacing: 3px;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: hsl(255, 31%, 58%);
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+#block-5 .divider {
+  display: inline-block;
+  vertical-align: top;
+  height: 170px;
+  border-left: thin solid hsl(255, 31%, 58%);
+  margin-top: 30px;
+}
+
 #block-5 #footnote {
   font-family: Roboto Slab;
   color: hsl(210, 1%, 67%);
@@ -209,5 +244,5 @@ html, body {
 }
 
 #block-5 img {
-  margin-top: 100px;
+  margin-top: 66px;
 }
