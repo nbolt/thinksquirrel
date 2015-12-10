@@ -52,11 +52,6 @@
   }
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(/type/montserrat/Montserrat-Book.otf) format(woff);
-}
-
 html, body {
   margin: 0;
   height: 100%;
