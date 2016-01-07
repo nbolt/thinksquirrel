@@ -338,6 +338,12 @@ html, body {
   text-transform: uppercase;
 }
 
+#block-5 .section.end > .text {
+    font-family: Roboto Slab;
+    color: hsl(255, 31%, 58%);
+    margin: 15px 0 0 20px;
+}
+
 #block-5 .section .links {
   margin: 20px 0 0 20px;
 }
