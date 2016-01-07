@@ -82,7 +82,7 @@ html, body {
 .block .content {
   width: 870px;
   margin: auto;
-  padding: 45px;
+  padding: 60px 45px;
 }
 
 .block .content > .title {
@@ -154,7 +154,7 @@ html, body {
 }
 
 #subscribe-container {
-  width: 620px;
+  width: 780px;
   margin: 0px auto;
   color: white;
   text-align: center;
@@ -162,7 +162,7 @@ html, body {
 
 #subscribe-container h1 {
   margin-top: 30px;
-  font-size: 2.8em;
+  font-size: 2.6em;
   font-family: Montserrat;
   font-weight: 600;
 }
@@ -283,6 +283,11 @@ html, body {
 
 #block-3 p {
     font-size: 1.05em;
+}
+
+#block-3 p.sub {
+    font-family: Roboto Slab;
+    font-size: 1em;
 }
 
 #block-3 .service {
