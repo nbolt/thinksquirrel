@@ -22,14 +22,14 @@
       <div id='header-container'>
         <div id='header'>
           <div class='links'>
-            <a href='javascript:void(0)' id='about'>
+            <a href='javascript:void(0)' id='what'>
               <div class='link'>
-                <div class='text'>About</div>
+                <div class='text'>What</div>
               </div>
             </a>
-            <a href='javascript:void(0)' id='tools'>
+            <a href='javascript:void(0)' id='why'>
               <div class='link'>
-                <div class='text'>Tools</div>
+                <div class='text'>Why</div>
               </div>
             </a>
             <a href='javascript:void(0)' id='features'>
@@ -80,17 +80,17 @@
         <div class='title'>Why choose us?</div>
         <div class='blocs'>
             <div class='bloc'>
-                <div class='icon'></div>
+                <div class='icon'><img src='/images/performance.png'/></div>
                 <div class='title'>Great performance</div>
                 <div class='text'>Focus on what's important: creating your vision. Our tools have a very low overhead and just work.</div>
             </div>
             <div class='bloc'>
-                <div class='icon'></div>
+                <div class='icon'><img src='/images/support2.png'/></div>
                 <div class='title'>World class support</div>
                 <div class='text'>We take support seriously. All Thinksquirrel products and services come with access to both our knowledge base and direct support.</div>
             </div>
             <div class='bloc'>
-                <div class='icon'></div>
+                <div class='icon'><img src='/images/device.png'/></div>
                 <div class='title'>On every device</div>
                 <div class='text'>Thinksquirrel products work on every platform support by Unity. Whether you're targeting PC, Mac, mobile, or anything else, our tools will get the job done.</div>
             </div>
@@ -216,10 +216,10 @@
     
     <script>
         $(document).ready(function(){
-            $('#about').click(function(){
+            $('#what').click(function(){
                 $.scrollTo('#block-1', 600, { easing: 'easeInOutQuint' })
             })
-            $('#tools').click(function(){
+            $('#why').click(function(){
                 $.scrollTo('#block-2', 800, { easing: 'easeInOutQuint' })
             })
             $('#features').click(function(){

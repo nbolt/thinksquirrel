@@ -255,11 +255,13 @@ html, body {
 
 #block-2 .blocs .bloc .icon {
     height: 120px;
+    margin-top: 10px;
 }
 
 #block-2 .blocs .bloc .title {
     font-size: 1.3em;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 #block-2 .blocs .bloc .text {
