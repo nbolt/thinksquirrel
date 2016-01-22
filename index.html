@@ -302,19 +302,24 @@
     <script>
         $(document).ready(function(){
             $('#what').click(function(){
-                $.scrollTo('#block-1', 600, { easing: 'easeInOutQuint' })
+                var top = $('#block-1').position().top - 90
+                $.scrollTo(top, 600, { easing: 'easeInOutQuint' })
             })
             $('#why').click(function(){
-                $.scrollTo('#block-2', 800, { easing: 'easeInOutQuint' })
+                var top = $('#block-2').position().top - 90
+                $.scrollTo(top, 800, { easing: 'easeInOutQuint' })
             })
             $('#features').click(function(){
-                $.scrollTo('#block-3', 1000, { easing: 'easeInOutQuint' })
+                var top = $('#block-3').position().top - 90
+                $.scrollTo(top, 1000, { easing: 'easeInOutQuint' })
             })
             $('#products').click(function(){
-                $.scrollTo('#block-4', 1200, { easing: 'easeInOutQuint' })
+                var top = $('#block-4').position().top - 90
+                $.scrollTo(top, 1200, { easing: 'easeInOutQuint' })
             })
             $('#support').click(function(){
-                $.scrollTo('#block-5', 1400, { easing: 'easeInOutQuint' })
+                var top = $('#block-5').position().top - 90
+                $.scrollTo(top, 1400, { easing: 'easeInOutQuint' })
             })
             
             $(window).scroll(function() {
