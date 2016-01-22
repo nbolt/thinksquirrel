@@ -17,6 +17,41 @@
   </head>
 
   <body>
+    
+    <header>
+      <div class='container'>
+        <div class='links'>
+          <a href='javascript:void(0)' id='what'>
+            <div class='link'>
+              <div class='text'>What</div>
+            </div>
+          </a>
+          <a href='javascript:void(0)' id='why'>
+            <div class='link'>
+              <div class='text'>Why</div>
+            </div>
+          </a>
+          <a href='javascript:void(0)' id='features'>
+            <div class='link'>
+              <div class='text'>Features</div>
+            </div>
+          </a>
+          <a href='javascript:void(0)' id='products'>
+            <div class='link'>
+              <div class='text'>Products</div>
+            </div>
+          </a>
+          <a href='javascript:void(0)' id='support'>
+            <div class='link'>
+              <div class='text'>Support</div>
+            </div>
+          </a>
+        </div>
+        <div class='logo'>
+          <img src='/images/logo_purple.png' />
+        </div>
+      </div>
+    </header>
 
     <div id='block-0' class='block'>
       <div id='header-container'>
@@ -48,7 +83,7 @@
               </div>
             </a>
           </div>
-          <div id='logo'>
+          <div class='logo'>
             <img src='/images/logo.png' />
           </div>
         </div>
@@ -280,6 +315,15 @@
             })
             $('#support').click(function(){
                 $.scrollTo('#block-5', 1400, { easing: 'easeInOutQuint' })
+            })
+            
+            $(window).scroll(function() {
+              if ( $(this).scrollTop() > 440 ){
+                $('header').addClass('visible')
+              }
+              else{
+                $('header').removeClass('visible')
+              }
             })
         })
     </script>

@@ -99,6 +99,62 @@ html, body {
   border-bottom: thin solid hsl(0, 0%, 87%);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 64px;
+  padding-top: 25px;
+  background-color: white;
+  border-bottom: thin solid #ccc;
+  z-index: 10;
+  transition: opacity 0.4s ease-in-out;
+}
+
+header.visible {
+  opacity: 1;
+}
+
+header .container {
+  width: 1040px;
+  margin: auto;
+}
+
+header .logo, header .logo img {
+  height: 46px;
+}
+
+header .links {
+  float: right;
+  margin-top: 12px;
+}
+
+header .links .link {
+  font-family: Montserrat;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+}
+
+header .links .link:hover, header .links .link.active {
+  opacity: 1;
+}
+
+header .links .link .text {
+  color: hsl(251, 28%, 39%);
+  font-size: 1.25em;
+}
+
+header .links a {
+  text-decoration: none;
+  color: white;
+}
+
 #block-0 {
   background-image: url(/images/stock.png);
   background-size: cover;
@@ -120,7 +176,7 @@ html, body {
   opacity: 0.5;
 }
 
-#block-0 #header #logo {
+#block-0 #header .logo {
   width: 301px;
   height: 46px;
 }
