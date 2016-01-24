@@ -266,9 +266,9 @@ header .links .link .text {
 }
 
 #block-2 {
-  height: 511px;
-  background-image: url(/images/pattern2.png);
-  background-repeat: true;
+  background-image: url(/images/gray.png);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 #block-2 .blocs {
@@ -530,13 +530,14 @@ header .links .link .text {
 }
 
 #block-5 {
-  height: 363px;
-  background-image: url(/images/pattern5.png);
-  background-repeat: true;
+  background-image: url(/images/gray.png);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 #block-5 .content {
   width: 1030px;
+  padding: 28px 48px 80px;
 }
 
 #block-5 .section {
