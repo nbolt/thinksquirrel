@@ -99,14 +99,17 @@ html, body {
   border-bottom: thin solid hsl(0, 0%, 87%);
 }
 
+.header {
+  height: 64px;
+  padding-top: 25px;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   opacity: 0;
-  height: 64px;
-  padding-top: 25px;
   background-color: white;
   border-bottom: thin solid #ccc;
   z-index: 10;
@@ -122,35 +125,38 @@ header .container {
   margin: auto;
 }
 
-header .logo, header .logo img {
+.header .logo, .header .logo img {
   height: 46px;
 }
 
-header .links {
+.header .links {
   float: right;
   margin-top: 12px;
 }
 
-header .links .link {
+.header .links .link {
   font-family: Montserrat;
   font-weight: 600;
   display: inline-block;
   vertical-align: top;
-  margin: 0 12px;
+  margin: 0 16px;
   opacity: 0.5;
   transition: opacity 0.4s ease-in-out;
 }
 
-header .links .link:hover, header .links .link.active {
+.header .links .link:hover, .header .links .link.active {
   opacity: 1;
 }
 
 header .links .link .text {
   color: hsl(251, 28%, 39%);
+}
+
+.header .links .link .text {
   font-size: 1.25em;
 }
 
-header .links a {
+.header .links a {
   text-decoration: none;
   color: white;
 }
@@ -166,47 +172,13 @@ header .links a {
   margin: auto;
 }
 
-#block-0 #header {
-  height: 64px;
-  padding-top: 25px;
-}
-
 #block-0 .hr {
   border-bottom: 2px solid white;
   opacity: 0.5;
 }
 
-#block-0 #header .logo {
+#block-0 .header .logo {
   width: 301px;
-  height: 46px;
-}
-
-#block-0 #header .links {
-  float: right;
-  margin-top: 12px;
-}
-
-#block-0 #header .links .link {
-  font-family: Montserrat;
-  font-weight: 600;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 12px;
-  opacity: 0.5;
-  transition: opacity 0.4s ease-in-out;
-}
-
-#block-0 #header .links .link:hover, #block-0 #header .links .link.active {
-  opacity: 1;
-}
-
-#block-0 #header .links .link .text {
-  font-size: 1.25em;
-}
-
-#block-0 #header .links a {
-  text-decoration: none;
-  color: white;
 }
 
 #subscribe-container {
@@ -256,6 +228,10 @@ header .links a {
     font-family: Roboto Slab;
 }
 
+#block-1 p.sub {
+  color: #aaa;
+}
+
 #block-1 p.title, #block-3 p.title {
     font-size: 1.3em;
     font-weight: 600;
@@ -267,13 +243,8 @@ header .links a {
     font-weight: 600;
 }
 
-#block-1 .video, #block-3 .video {
-
-}
-
 #block-1 .right .video, #block-3 .right .video {
     width: 100%;
-    height: 260px;
     background-color: #eee;
     margin-left: 25px;
     margin-top: 15px;
@@ -284,6 +255,14 @@ header .links a {
     height: 260px;
     background-color: #eee;
     margin-top: 15px;
+}
+
+#block-3 .right .video {
+  height: 260px;
+}
+
+#block-1 .right .video {
+  height: 360px;
 }
 
 #block-2 {
@@ -330,6 +309,15 @@ header .links a {
     margin-right: 0;
 }
 
+#block-3 > .content {
+  width: auto;
+  padding: 0;
+}
+
+#block-3 > .content > .title {
+  margin-top: 60px;
+}
+
 #block-3 .mid .left {
     width: 69%;
 }
@@ -346,17 +334,21 @@ header .links a {
 #block-3 p.sub {
     font-family: Roboto Slab;
     font-size: 1em;
+    color: #aaa;
 }
 
 #block-3 .service {
-    margin: 40px 0;
-    padding-bottom: 40px;
-    border-bottom: thin solid #ddd;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    width: 870px;
 }
 
 #block-3 .service:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
+  padding-bottom: 10px;
+}
+
+#block-3 .services .div {
+  border-bottom: thin solid #ddd;
 }
 
 #block-3 .content > .sub {
@@ -404,8 +396,8 @@ header .links a {
 }
 
 #block-4 .products .product::after {
-    border-color: rgba(255, 255, 255, 0);
-    border-top-color: #fff;
+    border-color: rgba(250, 250, 250, 0);
+    border-top-color: #fafafa;
     border-width: 10px;
     margin-left: -10px;
 }
@@ -446,17 +438,17 @@ header .links a {
 }
 
 #block-4 .viewport .top {
-  background-image: url(/images/pattern4.png);
-  background-repeat: true;
-  height: 443px;
+  background-image: url(/images/purple.png);
+  background-repeat: repeat;
+  height: 480px;
   overflow: auto;
 }
 
 #block-4 .viewport .top .product-info {
-    height: 360px;
+    height: 400px;
     background-color: white;
     border-radius: 5px;
-    width: 870px;
+    width: 900px;
     margin: 40px auto;
 }
 
