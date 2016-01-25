@@ -507,10 +507,18 @@ header .links .link .text {
   border-top: thin solid #ccc;
   border-bottom: thin solid #ccc;
   margin-top: 12px;
+  height: 222px;
+}
+
+#block-4 .viewport .top .product-info .pane.right .info .scroll {
+  height: 192px;
+  margin-top: 15px;
+  overflow-y: scroll;
 }
 
 #block-4 .viewport .top .product-info .pane.right .info p {
   color: #444;
+  margin: 0;
 }
 
 #block-4 .viewport .top .product-info .pane.right .buttons .button {
