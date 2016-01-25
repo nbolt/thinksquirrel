@@ -447,24 +447,94 @@ header .links .link .text {
 #block-4 .viewport .top .product-info {
     height: 400px;
     background-color: white;
-    border-radius: 5px;
     width: 900px;
     margin: 40px auto;
+    border-radius: 5px;
 }
 
 #block-4 .viewport .top .product-info .pane {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: top;
     height: 100%;
+    box-sizing: border-box;
 }
 
 #block-4 .viewport .top .product-info .pane.left {
     width: 25%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 30px;
 }
 
 #block-4 .viewport .top .product-info .pane.right {
     background-color: #eee;
     width: 75%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 24px 40px;
+}
+
+#block-4 .viewport .top .product-info .pane.left .logo {
+  text-align: center;
+}
+
+#block-4 .viewport .top .product-info .pane p {
+  font-family: Roboto Slab;
+}
+
+#block-4 .viewport .top .product-info .pane.left p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+#block-4 .viewport .top .product-info .text {
+  margin-top: 24px;
+}
+
+#block-4 .viewport .top .product-info .pane.right > .title {
+  font-family: Montserrat;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#block-4 .viewport .top .product-info .pane.right > .sub {
+  font-family: Montserrat;
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+#block-4 .viewport .top .product-info .pane.right .info {
+  border-top: thin solid #ccc;
+  border-bottom: thin solid #ccc;
+  margin-top: 12px;
+}
+
+#block-4 .viewport .top .product-info .pane.right .info p {
+  color: #444;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button {
+  display: inline-block;
+  vertical-align: top;
+  margin: 14px 21px 0 0;
+  float: right;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button:first-child {
+  margin-right: 0;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button.purple {
+  background-color: hsl(255, 31%, 58%);
+  color: white;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button.trans {
+  color: hsl(255, 31%, 58%);
+  border: 2px solid hsl(255, 31%, 58%);
+  background-color: #eee;
+  border-radius: 24px;
+  padding: 12px 0;
 }
 
 #block-4 .viewport .bottom {
