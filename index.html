@@ -176,6 +176,7 @@
         <div class='content'>
           <div class='title'>Our products</div>
           <div class='products'>
+              <div id='product-arrow'></div>
               <div class='product'>
                   <div class='title'>Fluvio</div>
                   <div class='text'>Fluid dynamics for Unity.</div>
@@ -357,6 +358,11 @@
                 $.scrollTo(top, 1400, { easing: 'easeInOutQuint' })
             })
             
+            $('#block-4 .product').click(function(){
+              var num = $('#block-4 .products .product').index($(this))
+              $('#product-arrow').css('left', 109 + (224 * num))
+            })
+
             $(window).scroll(function() {
               if ( $(this).scrollTop() > 440 ){
                 $('header').addClass('visible')

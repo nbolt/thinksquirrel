@@ -366,6 +366,7 @@ header .links .link .text {
 
 #block-4 .products {
     margin-top: 60px;
+    position: relative;
 }
 
 #block-4 .products .product {
@@ -377,6 +378,8 @@ header .links .link .text {
     padding-left: 16px;
     box-sizing: border-box;
 }
+
+/*
 
 #block-4 .products .product::after, #block-4 .products .product::before {
     top: 77px;
@@ -408,6 +411,40 @@ header .links .link .text {
     margin-left: -11px;
 }
 
+*/
+
+#block-4 .products #product-arrow {
+  position: absolute;
+  left: 100px;
+  bottom: -30px;
+  transition: left .4s ease-in-out;
+  z-index: 10;
+}
+
+#block-4 .products #product-arrow::after, #block-4 .products #product-arrow::before {
+    top: 0;
+    left: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#block-4 .products #product-arrow::after {
+    border-color: rgba(250, 250, 250, 0);
+    border-top-color: #fafafa;
+    border-width: 10px;
+    margin-left: -10px;
+}
+#block-4 .products #product-arrow::before {
+    border-color: rgba(204, 204, 204, 0);
+    border-top-color: #ccc;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
 #block-4 .products .product:last-child {
     border-right: 0;
 }
@@ -423,6 +460,18 @@ header .links .link .text {
     color: #666;
     font-style: italic;
     margin-top: 12px;
+}
+
+#block-4 .products .product:hover {
+  cursor: pointer;
+}
+
+#block-4 .products .product:hover .title {
+  color: #999;
+}
+
+#block-4 .products .product:hover .text {
+  color: #aaa;
 }
 
 #block-4 .products .product.selected .title {
