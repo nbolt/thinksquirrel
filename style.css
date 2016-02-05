@@ -517,7 +517,7 @@ header .links .link .text {
   position: absolute;
   left: 100px;
   bottom: -30px;
-  transition: left .4s ease-in-out;
+  transition: left .6s ease-in-out;
   z-index: 10;
 }
 
@@ -602,7 +602,7 @@ header .links .link .text {
     border-radius: 5px;
     display: none;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #block-4 .viewport .top .product-info.display {
