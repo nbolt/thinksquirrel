@@ -713,13 +713,13 @@ header .links .link .text {
 }
 
 #block-4 .viewport .bottom .boxes {
-    width: 864px;
+    width: 900px;
     margin: auto;
     padding: 40px 0;
 }
 
 #block-4 .viewport .bottom .boxes .box {
-    width: 400px;
+    width: 418px;
     margin-right: 60px;
     display: inline-block;
     vertical-align: top;
