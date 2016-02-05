@@ -402,40 +402,6 @@ header .links .link .text {
     box-sizing: border-box;
 }
 
-/*
-
-#block-4 .products .product::after, #block-4 .products .product::before {
-    top: 77px;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    z-index: 10;
-    display: none;
-}
-
-#block-4 .products .product.selected::after, #block-4 .products .product.selected::before {
-    display: block;
-}
-
-#block-4 .products .product::after {
-    border-color: rgba(250, 250, 250, 0);
-    border-top-color: #fafafa;
-    border-width: 10px;
-    margin-left: -10px;
-}
-#block-4 .products .product::before {
-    border-color: rgba(204, 204, 204, 0);
-    border-top-color: #ccc;
-    border-width: 11px;
-    margin-left: -11px;
-}
-
-*/
-
 #block-4 .products #product-arrow {
   position: absolute;
   left: 100px;
@@ -483,6 +449,10 @@ header .links .link .text {
     color: #666;
     font-style: italic;
     margin-top: 12px;
+}
+
+#block-4 .products .product .title, #block-4 .products .product .text {
+  transition: color .2s ease-in-out;
 }
 
 #block-4 .products .product:hover {
@@ -618,6 +588,8 @@ header .links .link .text {
 
 #block-4 .viewport .top .product-info .pane.right .buttons .button.purple {
   background-color: hsl(255, 31%, 58%);
+  border: 2px solid transparent;
+  padding: 12px 0;
   color: white;
 }
 
@@ -625,8 +597,22 @@ header .links .link .text {
   color: hsl(255, 31%, 58%);
   border: 2px solid hsl(255, 31%, 58%);
   background-color: #eee;
+  padding: 12px 0;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button.purple:hover {
+  cursor: pointer;
+  color: hsl(255, 31%, 58%);
+  border: 2px solid hsl(255, 31%, 58%);
+  background-color: #eee;
   border-radius: 24px;
   padding: 12px 0;
+}
+
+#block-4 .viewport .top .product-info .pane.right .buttons .button.trans:hover {
+  cursor: pointer;
+  background-color: hsl(255, 31%, 58%);
+  color: white;
 }
 
 #block-4 .viewport .bottom {
@@ -679,6 +665,7 @@ header .links .link .text {
     width: 250px;
     margin: 16px auto 24px;
     border-radius: 20px;
+    transition: background-color .2s ease-in-out;
 }
 
 #block-4 .viewport .bottom .boxes .box .button.gray {
@@ -689,6 +676,16 @@ header .links .link .text {
 #block-4 .viewport .bottom .boxes .box .button.purple {
     background-color: hsl(249, 28%, 39%);
     color: white;
+}
+
+#block-4 .viewport .bottom .boxes .box .button.purple:hover {
+  cursor: pointer;
+  background-color: #8373B5;
+}
+
+#block-4 .viewport .bottom .boxes .box .button.gray:hover {
+  cursor: pointer;
+  background-color: #EEE;
 }
 
 #block-5 {
@@ -784,6 +781,49 @@ header .links .link .text {
 
 #block-5 .logo {
   margin-top: 66px;
+}
+
+#subscribe-email {
+  position: relative;
+  margin: 20px 0 0 20px;
+}
+
+#subscribe-email input {
+  width: 272px;
+  background-color: #9D98B8;
+  padding: 12px 16px;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+#subscribe-email input::-webkit-input-placeholder {
+  color: white;
+}
+
+#subscribe-email input:-moz-placeholder {
+  color: white;
+}
+
+#subscribe-email::after {
+  content: '';
+  background-image: url(/images/email.png);
+  background-repeat: no-repeat;
+  background-position: 8px;
+  background-color: #514881;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#subscribe-email::after:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
