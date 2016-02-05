@@ -10,7 +10,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/js/jquery-ui.js"></script>
     <script src="/js/scroll.js"></script>
@@ -138,34 +138,40 @@
         <div class='title'>Product Features</div>
         <div class='sub'>Thinksquirrel provides top-notch solutions for the Unity game engine, at affordable prices. Our tools are both powerful and easy to use.</div>
         <div class='services'>
-            <div class='service'>
-                <div class='left'>
-                    <p class='title'>Accurate.</p>
-                    <p class='sub'>More than anything, we want your users to be fully immersed in the world you create for them. Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
-                </div>
-                <div class='right'>
-                    <div class='video'></div>
-                </div>
+            <div class='service-container'>
+              <div class='service globe'>
+                  <div class='left'>
+                      <p class='title'>Versatile.</p>
+                      <p class='sub'>When we say “it’s your world,” we mean it. Our products are meant to be used in whatever ways you see fit. Push the envelope, break the rules, and make something entirely new. We love seeing the incredible new ways users implement our products. The sky’s the limit.</p>
+                  </div>
+                  <div class='right'>
+                      <div class='video'></div>
+                  </div>
+              </div>
             </div>
             <div class='div'></div>
-            <div class='service mid'>
-                <div class='left'>
-                    <div class='video'></div>
-                </div>
-                <div class='right'>
-                    <p class='title'>Versatile.</p>
-                    <p class='sub'>When we say “it’s your world,” we mean it. Our products are meant to be used in whatever ways you see fit. Push the envelope, break the rules, and make something entirely new. We love seeing the incredible new ways users implement our products. The sky’s the limit.</p>
-                </div>
+            <div class='service-container mid'>
+              <div class='service laptop'>
+                  <div class='left'>
+                      <div class='video'></div>
+                  </div>
+                  <div class='right'>
+                      <p class='title'>Accurate.</p>
+                      <p class='sub'>More than anything, we want your users to be fully immersed in the world you create for them. Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
+                  </div>
+              </div>
             </div>
             <div class='div'></div>
-            <div class='service'>
-                <div class='left'>
-                    <p class='title'>Quality.</p>
-                    <p class='sub'>Meticulously organized and streamlined, we ship only the highest quality products. That means your project runs smoothly, faster, and with fewer bugs. We take every detail under the hood as seriously as you do. Confidence is key and we won’t disappoint.</p>
-                </div>
-                <div class='right'>
-                    <div class='video'></div>
-                </div>
+            <div class='service-container'>
+              <div class='service package'>
+                  <div class='left'>
+                      <p class='title'>Quality.</p>
+                      <p class='sub'>Meticulously organized and streamlined, we ship only the highest quality products. That means your project runs smoothly, faster, and with fewer bugs. We take every detail under the hood as seriously as you do. Confidence is key and we won’t disappoint.</p>
+                  </div>
+                  <div class='right'>
+                      <div class='video'></div>
+                  </div>
+              </div>
             </div>
         </div>
       </div>
@@ -177,11 +183,11 @@
           <div class='title'>Our products</div>
           <div class='products'>
               <div id='product-arrow'></div>
-              <div class='product'>
+              <div class='product selected'>
                   <div class='title'>Fluvio</div>
                   <div class='text'>Fluid dynamics for Unity.</div>
               </div>
-              <div class='product selected'>
+              <div class='product'>
                   <div class='title'>World Game Builder</div>
                   <div class='text'>Create your own word game.</div>
               </div>
@@ -202,6 +208,43 @@
       </div>
       <div class='viewport'>
         <div class='top'>
+            <div class='product-info display selected'>
+                <div class='left pane'>
+                  <div class='logo'><img src='/images/wgb.png' /></div>
+                  <div class='text'>
+                    <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
+                    <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                </div
+                ><div class='right pane'>
+                  <div class='title'>Fluvio</div>
+                  <div class='sub'>Fluid dynamics for Unity.</div>
+                  <div class='info'>
+                    <div class='scroll'>
+                      <p>
+                        Features:<br/>
+                        * Multiple Languages (English, French, Italian, and Spanish are included)<br/>
+                        * Fast, efficient, word checking<br/>
+                        * Permutation and prefix checking<br/>
+                        * Letter tiles, players, tile distribution, and word game AIs<br/>
+                        * Easy to use event binding<br/>
+                        * Mobile-ready, with a fully documented example game<br/>
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                      </p>
+                    </div>
+                  </div>
+                  <div class='buttons'>
+                    <div class='purple button'>Pro</div>
+                    <div class='trans button'>Standard</div>
+                  </div>
+                </div>
+            </div>
             <div class='product-info'>
                 <div class='left pane'>
                   <div class='logo'><img src='/images/wgb.png' /></div>
@@ -213,6 +256,117 @@
                 ><div class='right pane'>
                   <div class='title'>Word Game Builder</div>
                   <div class='sub'>Create your own word game.</div>
+                  <div class='info'>
+                    <div class='scroll'>
+                      <p>
+                        Features:<br/>
+                        * Multiple Languages (English, French, Italian, and Spanish are included)<br/>
+                        * Fast, efficient, word checking<br/>
+                        * Permutation and prefix checking<br/>
+                        * Letter tiles, players, tile distribution, and word game AIs<br/>
+                        * Easy to use event binding<br/>
+                        * Mobile-ready, with a fully documented example game<br/>
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                      </p>
+                    </div>
+                  </div>
+                  <div class='buttons'>
+                    <div class='purple button'>Pro</div>
+                    <div class='trans button'>Standard</div>
+                  </div>
+                </div>
+            </div>
+            <div class='product-info'>
+                <div class='left pane'>
+                  <div class='logo'><img src='/images/wgb.png' /></div>
+                  <div class='text'>
+                    <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
+                    <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                </div
+                ><div class='right pane'>
+                  <div class='title'>Thinkscroller</div>
+                  <div class='sub'>Easy parallax scrolling.</div>
+                  <div class='info'>
+                    <div class='scroll'>
+                      <p>
+                        Features:<br/>
+                        * Multiple Languages (English, French, Italian, and Spanish are included)<br/>
+                        * Fast, efficient, word checking<br/>
+                        * Permutation and prefix checking<br/>
+                        * Letter tiles, players, tile distribution, and word game AIs<br/>
+                        * Easy to use event binding<br/>
+                        * Mobile-ready, with a fully documented example game<br/>
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                      </p>
+                    </div>
+                  </div>
+                  <div class='buttons'>
+                    <div class='purple button'>Pro</div>
+                    <div class='trans button'>Standard</div>
+                  </div>
+                </div>
+            </div>
+            <div class='product-info'>
+                <div class='left pane'>
+                  <div class='logo'><img src='/images/wgb.png' /></div>
+                  <div class='text'>
+                    <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
+                    <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                </div
+                ><div class='right pane'>
+                  <div class='title'>Camera Shake</div>
+                  <div class='sub'>Awesome camera motion.</div>
+                  <div class='info'>
+                    <div class='scroll'>
+                      <p>
+                        Features:<br/>
+                        * Multiple Languages (English, French, Italian, and Spanish are included)<br/>
+                        * Fast, efficient, word checking<br/>
+                        * Permutation and prefix checking<br/>
+                        * Letter tiles, players, tile distribution, and word game AIs<br/>
+                        * Easy to use event binding<br/>
+                        * Mobile-ready, with a fully documented example game<br/>
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                        * Built-in support for NGUI, 2D Toolkit, Daikon Forge GUI, and native sprites (Unity 4.3+).
+                      </p>
+                    </div>
+                  </div>
+                  <div class='buttons'>
+                    <div class='purple button'>Pro</div>
+                    <div class='trans button'>Standard</div>
+                  </div>
+                </div>
+            </div>
+            <div class='product-info'>
+                <div class='left pane'>
+                  <div class='logo'><img src='/images/wgb.png' /></div>
+                  <div class='text'>
+                    <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
+                    <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                </div
+                ><div class='right pane'>
+                  <div class='title'>Physics 2D Extensions</div>
+                  <div class='sub'>Extend Unity's 2D Physics.</div>
                   <div class='info'>
                     <div class='scroll'>
                       <p>
@@ -361,6 +515,17 @@
             $('#block-4 .product').click(function(){
               var num = $('#block-4 .products .product').index($(this))
               $('#product-arrow').css('left', 109 + (224 * num))
+              $('.product').removeClass('selected')
+              $(this).addClass('selected')
+
+              $('#block-4 .viewport .top .product-info').removeClass('selected')
+              setTimeout(function(){
+                $('#block-4 .viewport .top .product-info').removeClass('display')
+                $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('display')
+                setTimeout(function(){
+                  $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('selected')
+                }, 10)
+              }, 200)
             })
 
             $(window).scroll(function() {
