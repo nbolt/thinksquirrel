@@ -747,7 +747,7 @@ header .links .link .text {
     font-family: PT Serif;
     font-size: 0.9em;
     color: #aaa;
-    padding: 24px 0;
+    padding: 30px 0 20px;
     width: 320px;
     margin: auto;
 }
@@ -759,8 +759,8 @@ header .links .link .text {
 }
 
 #block-4 .viewport .bottom .boxes .box .button.gray {
-    background-color: #e2e2e2;
     color: hsl(249, 28%, 39%);
+    background-color: #F5F5F5;
 }
 
 #block-4 .viewport .bottom .boxes .box .button.purple {
