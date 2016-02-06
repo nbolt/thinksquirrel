@@ -194,26 +194,32 @@
           <div class='title'>Our products</div>
           <div class='products'>
               <div id='product-arrow'></div>
-              <div class='product selected'>
-                  <div class='title'>Fluvio</div>
-                  <div class='text'>Fluid dynamics for Unity.</div>
+              <div id='product-arrow-left'><</div>
+              <div class='products-container'>
+                <div class='products-scroll'>
+                  <div class='product selected'>
+                      <div class='title'>Fluvio</div>
+                      <div class='text'>Fluid dynamics for Unity.</div>
+                  </div>
+                  <div class='product'>
+                      <div class='title'>World Game Builder</div>
+                      <div class='text'>Create your own word game.</div>
+                  </div>
+                  <div class='product'>
+                      <div class='title'>Thinkscroller</div>
+                      <div class='text'>Easy parallax scrolling.</div>
+                  </div>
+                  <div class='product'>
+                      <div class='title'>Camera Shake</div>
+                      <div class='text'>Awesome camera motion.</div>
+                  </div>
+                  <div class='product'>
+                      <div class='title'>Physics 2D Extensions</div>
+                      <div class='text'>Extend Unity's 2D physics.</div>
+                  </div>
+                </div>
               </div>
-              <div class='product'>
-                  <div class='title'>World Game Builder</div>
-                  <div class='text'>Create your own word game.</div>
-              </div>
-              <div class='product'>
-                  <div class='title'>Thinkscroller</div>
-                  <div class='text'>Easy parallax scrolling.</div>
-              </div>
-              <div class='product'>
-                  <div class='title'>Camera Shake</div>
-                  <div class='text'>Awesome camera motion.</div>
-              </div>
-              <div class='product'>
-                  <div class='title'>Physics 2D Extensions</div>
-                  <div class='text'>Extend Unity's 2D physics.</div>
-              </div>
+              <div id='product-arrow-right'>></div>
           </div>
         </div>
       </div>
@@ -226,12 +232,22 @@
                     <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
                     <p>Requires Unity 3.5.7 or higher.</p>
                   </div>
+                  <div class='title'>
+                    <h1>Fluvio</h1>
+                    <h2>Fluid dynamics for Unity.</h2>
+                  </div>
                 </div
                 ><div class='right pane'>
                   <div class='title'>Fluvio</div>
                   <div class='sub'>Fluid dynamics for Unity.</div>
                   <div class='info'>
                     <div class='scroll'>
+                      <p class='desc'>
+                        Word Game Builder is an extensive system to create your own high-performance word games.
+                      </p>
+                      <p class='desc'>
+                        Requires Unity 3.5.7 or higher.
+                      </p>
                       <p>
                         Features:<br/>
                         * Multiple Languages (English, French, Italian, and Spanish are included)<br/>
@@ -262,6 +278,10 @@
                   <div class='text'>
                     <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
                     <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                  <div class='title'>
+                    <h1>Word Game Builder</h1>
+                    <h2>Create your own word game.</h2>
                   </div>
                 </div
                 ><div class='right pane'>
@@ -300,6 +320,10 @@
                     <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
                     <p>Requires Unity 3.5.7 or higher.</p>
                   </div>
+                  <div class='title'>
+                    <h1>Thinkscroller</h1>
+                    <h2>Easy parallax scrolling.</h2>
+                  </div>
                 </div
                 ><div class='right pane'>
                   <div class='title'>Thinkscroller</div>
@@ -337,6 +361,10 @@
                     <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
                     <p>Requires Unity 3.5.7 or higher.</p>
                   </div>
+                  <div class='title'>
+                    <h1>Camera Shake</h1>
+                    <h2>Awesome camera motion.</h2>
+                  </div>
                 </div
                 ><div class='right pane'>
                   <div class='title'>Camera Shake</div>
@@ -373,6 +401,10 @@
                   <div class='text'>
                     <p>Word Game Builder is an extensive system to create your own high-performance word games.</p>
                     <p>Requires Unity 3.5.7 or higher.</p>
+                  </div>
+                  <div class='title'>
+                    <h1>Physics 2D Extensions</h1>
+                    <h2>Extend Unity's 2D Physics.</h2>
                   </div>
                 </div
                 ><div class='right pane'>
@@ -531,6 +563,42 @@
               $('#product-arrow').css('left', 109 + (224 * num))
               $('.product').removeClass('selected')
               $(this).addClass('selected')
+
+              $('#block-4 .viewport .top .product-info').removeClass('selected')
+              setTimeout(function(){
+                $('#block-4 .viewport .top .product-info').removeClass('display')
+                $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('display')
+                setTimeout(function(){
+                  $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('selected')
+                }, 10)
+              }, 300)
+            })
+            
+            $('#product-arrow-right').click(function(){
+              var num = $('#block-4 .products .product.selected').index() + 1
+              if (num > 4) num = 0
+              var el  = $('#block-4 .products .product:eq(' + num + ')')
+              $('#block-4 .products-scroll').css('margin-left', -(el.width() * num))
+              $('.product').removeClass('selected')
+              el.addClass('selected')
+
+              $('#block-4 .viewport .top .product-info').removeClass('selected')
+              setTimeout(function(){
+                $('#block-4 .viewport .top .product-info').removeClass('display')
+                $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('display')
+                setTimeout(function(){
+                  $('#block-4 .viewport .top .product-info:eq(' + num + ')').addClass('selected')
+                }, 10)
+              }, 300)
+            })
+            
+            $('#product-arrow-left').click(function(){
+              var num = $('#block-4 .products .product.selected').index() - 1
+              if (num < 0) num = 4
+              var el  = $('#block-4 .products .product:eq(' + num + ')')
+              $('#block-4 .products-scroll').css('margin-left', -(el.width() * num))
+              $('.product').removeClass('selected')
+              el.addClass('selected')
 
               $('#block-4 .viewport .top .product-info').removeClass('selected')
               setTimeout(function(){
