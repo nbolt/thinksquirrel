@@ -812,7 +812,9 @@ header .links .link .text {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  margin-left: -155px;
+  width: 300px;
+  text-align: center;
+  margin-left: -150px;
 }
 
 #block-5 .logo {
@@ -876,7 +878,7 @@ header .links .link .text {
   }
 
   .header .logo {
-    width: 50% !important;
+    width: 200px !important;
     height: auto !important;
     margin: 8px 0 0 16px;
   }
@@ -972,10 +974,14 @@ header .links .link .text {
     display: inline-block;
   }
   
-  #product-arrow-left, #product-arrow-right {
+  #product-arrow-left {
     width: 8%;
   }
   
+  #product-arrow-right {
+    width: 4%;
+  }
+
   #product-arrow-left, #product-arrow-right:hover {
     cursor: pointer;
   }
@@ -985,7 +991,7 @@ header .links .link .text {
   }
   
   #block-4 .products-container {
-    width: 80%;
+    width: 85%;
     overflow: hidden;
   }
   
@@ -1116,7 +1122,7 @@ header .links .link .text {
   }
 
   #block-4 .viewport .top .product-info .pane.left .logo {
-    width: 25%;
+    width: 70px;
     display: inline-block;
     vertical-align: top;
   }
@@ -1139,7 +1145,8 @@ header .links .link .text {
   }
   
   #block-5 .section.end {
-    margin-bottom: 40px;
     text-align: center;
+    display: block;
+    margin: 40px auto;
   }
 }
