@@ -104,6 +104,27 @@ html, body {
   padding-top: 25px;
 }
 
+.header .menu-container {
+  display: none;
+  margin: 4px 24px 0 0;
+}
+
+.header .menu-container:hover {
+  cursor: pointer;
+}
+
+.header .menu-container .icon {
+  font-size: 1.75em;
+}
+
+header .menu-container .icon {
+  color: hsl(251, 28%, 39%);
+}
+
+#header-container .menu-container .icon {
+  color: white;
+}
+
 header {
   position: fixed;
   top: -90px;
@@ -872,6 +893,11 @@ header .links .link .text {
 @media only screen and (max-width: 768px) {
   header .container {
     width: 100% !important;
+  }
+  
+  .header .menu-container {
+    display: block;
+    float: right;
   }
 
   .header .links {
