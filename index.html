@@ -24,27 +24,27 @@
           <div class='icon'><div class='typcn typcn-th-menu'></div></div>
         </div>
         <div class='links'>
-          <a href='javascript:void(0)' id='what'>
+          <a href='javascript:void(0)' class='what'>
             <div class='link'>
               <div class='text'>What</div>
             </div>
           </a>
-          <a href='javascript:void(0)' id='why'>
+          <a href='javascript:void(0)' class='why'>
             <div class='link'>
               <div class='text'>Why</div>
             </div>
           </a>
-          <a href='javascript:void(0)' id='features'>
+          <a href='javascript:void(0)' class='features'>
             <div class='link'>
               <div class='text'>Features</div>
             </div>
           </a>
-          <a href='javascript:void(0)' id='products'>
+          <a href='javascript:void(0)' class='products'>
             <div class='link'>
               <div class='text'>Products</div>
             </div>
           </a>
-          <a href='javascript:void(0)' id='support'>
+          <a href='javascript:void(0)' class='support'>
             <div class='link'>
               <div class='text'>Support</div>
             </div>
@@ -63,27 +63,27 @@
             <div class='icon'><div class='typcn typcn-th-menu'></div></div>
           </div>
           <div class='links'>
-            <a href='javascript:void(0)' id='what'>
+            <a href='javascript:void(0)' class='what'>
               <div class='link'>
                 <div class='text'>What</div>
               </div>
             </a>
-            <a href='javascript:void(0)' id='why'>
+            <a href='javascript:void(0)' class='why'>
               <div class='link'>
                 <div class='text'>Why</div>
               </div>
             </a>
-            <a href='javascript:void(0)' id='features'>
+            <a href='javascript:void(0)' class='features'>
               <div class='link'>
                 <div class='text'>Features</div>
               </div>
             </a>
-            <a href='javascript:void(0)' id='products'>
+            <a href='javascript:void(0)' class='products'>
               <div class='link'>
                 <div class='text'>Products</div>
               </div>
             </a>
-            <a href='javascript:void(0)' id='support'>
+            <a href='javascript:void(0)' class='support'>
               <div class='link'>
                 <div class='text'>Support</div>
               </div>
@@ -108,7 +108,8 @@
         <div class='title'>What is Thinksquirrel?</div>
         <div class='left'>
             <p class='title'>It's your world, We make it work.</p>
-            <p class='sub'>At Thinksquirrel, our main mission is equipping developers with powerful tools for making visually realistic games and applications. To do so, we create physics-based products for 2D and 3D projects, integrating closely with game engines and development platforms. Our flagship product, Fluvio, integrates the most realistic fluid dynamics available into projects created in Unity.</p>
+            <p class='sub bold'>At Thinksquirrel, our main mission is equipping developers with powerful tools for making visually realistic games and applications.</p>
+            <p class='sub'>To do so, we create physics-based products for 2D and 3D projects, integrating closely with game engines and development platforms. Our flagship product, Fluvio, integrates the most realistic fluid dynamics available into projects created in Unity.</p>
         </div>
         <div class='right'>
             <div class='video'></div>
@@ -148,7 +149,8 @@
               <div class='service globe'>
                   <div class='left'>
                       <p class='title'>Versatile.</p>
-                      <p class='sub'>When we say “it’s your world,” we mean it. Our products are meant to be used in whatever ways you see fit. Push the envelope, break the rules, and make something entirely new. We love seeing the incredible new ways users implement our products. The sky’s the limit.</p>
+                      <p class='sub bold'>When we say “it’s your world,” we mean it.</p>
+                      <p class='sub'>Our products are meant to be used in whatever ways you see fit. Push the envelope, break the rules, and make something entirely new. We love seeing the incredible new ways users implement our products. The sky’s the limit.</p>
                   </div>
                   <div class='right'>
                       <div class='video'></div>
@@ -163,7 +165,8 @@
                   </div>
                   <div class='right'>
                       <p class='title'>Accurate.</p>
-                      <p class='sub'>More than anything, we want your users to be fully immersed in the world you create for them. Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
+                      <p class='sub bold'>More than anything, we want your users to be fully immersed in the world you create for them.</p>
+                      <p class='sub'>Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
                   </div>
               </div>
             </div>
@@ -171,7 +174,8 @@
               <div class='service laptop'>
                   <div class='left'>
                       <p class='title'>Accurate.</p>
-                      <p class='sub'>More than anything, we want your users to be fully immersed in the world you create for them. Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
+                      <p class='sub bold'>More than anything, we want your users to be fully immersed in the world you create for them.</p>
+                      <p class='sub'>Our physically-accurate models work hard behind the scenes, creating the most realistic simulations and captivating experiences available.</p>
                   </div>
                   <div class='right'>
                       <div class='video'></div>
@@ -183,7 +187,8 @@
               <div class='service package'>
                   <div class='left'>
                       <p class='title'>Quality.</p>
-                      <p class='sub'>Meticulously organized and streamlined, we ship only the highest quality products. That means your project runs smoothly, faster, and with fewer bugs. We take every detail under the hood as seriously as you do. Confidence is key and we won’t disappoint.</p>
+                      <p class='sub bold'>Meticulously organized and streamlined, we ship only the highest quality products.</p>
+                      <p class='sub'>That means your project runs smoothly, faster, and with fewer bugs. We take every detail under the hood as seriously as you do. Confidence is key and we won’t disappoint.</p>
                   </div>
                   <div class='right'>
                       <div class='video'></div>
@@ -543,23 +548,33 @@
     
     <script>
         $(document).ready(function(){
-            $('#what').click(function(){
+            $('.header .what').click(function(){
+                $('header .links a').removeClass('selected')
+                $('header .links a.what').addClass('selected')
                 var top = $('#block-1').position().top - 90
                 $.scrollTo(top, 600, { easing: 'easeInOutQuint' })
             })
-            $('#why').click(function(){
+            $('.header .why').click(function(){
+                $('header .links a').removeClass('selected')
+                $('header .links a.why').addClass('selected')
                 var top = $('#block-2').position().top - 90
                 $.scrollTo(top, 800, { easing: 'easeInOutQuint' })
             })
-            $('#features').click(function(){
+            $('.header .features').click(function(){
+                $('header .links a').removeClass('selected')
+                $('header .links a.features').addClass('selected')
                 var top = $('#block-3').position().top - 90
                 $.scrollTo(top, 1000, { easing: 'easeInOutQuint' })
             })
-            $('#products').click(function(){
+            $('.header .products').click(function(){
+                $('header .links a').removeClass('selected')
+                $('header .links a.products').addClass('selected')
                 var top = $('#block-4').position().top - 90
                 $.scrollTo(top, 1200, { easing: 'easeInOutQuint' })
             })
-            $('#support').click(function(){
+            $('.header .support').click(function(){
+                $('header .links a').removeClass('selected')
+                $('header .links a.support').addClass('selected')
                 var top = $('#block-5').position().top - 90
                 $.scrollTo(top, 1400, { easing: 'easeInOutQuint' })
             })
@@ -617,7 +632,7 @@
             })
 
             $(window).scroll(function() {
-              if ( $(this).scrollTop() > 440 ){
+              if ( $(this).scrollTop() > 100 ){
                 $('header').addClass('visible')
               }
               else{
