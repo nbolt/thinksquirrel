@@ -539,6 +539,7 @@
           <div class='title'>Subscribe for updates and special offers</div>
           <div class='text'>Be the first to know about promotions and new products, plus receive exclusive offers for e-mail subscribers.</div>
           <div id='subscribe-email'>
+            <div id='button'></div>
             <input type='text' placeholder='Email' />
           </div>
         </div>
@@ -553,30 +554,43 @@
                 $('header .links a.what').addClass('selected')
                 var top = $('#block-1').position().top - 90
                 $.scrollTo(top, 600, { easing: 'easeInOutQuint' })
+                $('.header .links').removeClass('visible')
             })
             $('.header .why').click(function(){
                 $('header .links a').removeClass('selected')
                 $('header .links a.why').addClass('selected')
                 var top = $('#block-2').position().top - 90
                 $.scrollTo(top, 800, { easing: 'easeInOutQuint' })
+                $('.header .links').removeClass('visible')
             })
             $('.header .features').click(function(){
                 $('header .links a').removeClass('selected')
                 $('header .links a.features').addClass('selected')
                 var top = $('#block-3').position().top - 90
                 $.scrollTo(top, 1000, { easing: 'easeInOutQuint' })
+                $('.header .links').removeClass('visible')
             })
             $('.header .products').click(function(){
                 $('header .links a').removeClass('selected')
                 $('header .links a.products').addClass('selected')
                 var top = $('#block-4').position().top - 90
                 $.scrollTo(top, 1200, { easing: 'easeInOutQuint' })
+                $('.header .links').removeClass('visible')
             })
             $('.header .support').click(function(){
                 $('header .links a').removeClass('selected')
                 $('header .links a.support').addClass('selected')
                 var top = $('#block-5').position().top - 90
                 $.scrollTo(top, 1400, { easing: 'easeInOutQuint' })
+                $('.header .links').removeClass('visible')
+            })
+            
+            $('.header .typcn-th-menu').click(function(){
+              if ($('.header .links').hasClass('visible')) {
+                $('.header .links').removeClass('visible')
+              } else {
+                $('.header .links').addClass('visible')
+              }
             })
             
             $('#block-4 .product').click(function(){
