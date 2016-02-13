@@ -909,7 +909,7 @@ header .links .link .text {
   background-color: #9D98B8;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header .container {
     width: 100% !important;
   }
