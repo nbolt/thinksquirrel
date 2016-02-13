@@ -1057,6 +1057,7 @@ header .links .link .text {
   
   #product-arrow-left, #product-arrow-right, .products-container {
     display: inline-block;
+    vertical-align: top;
   }
   
   #product-arrow-left {
