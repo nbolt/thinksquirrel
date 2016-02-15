@@ -427,6 +427,7 @@ header .links .link .text {
 
 #block-4 .content {
     width: 1116px;
+    padding: 0;
     padding-bottom: 30px;
 }
 
@@ -660,9 +661,8 @@ header .links .link .text {
 
 #block-4 .viewport .top .product-info .pane.right .buttons .button.purple:hover {
   cursor: pointer;
-  color: hsl(255, 31%, 58%);
-  border: 2px solid hsl(255, 31%, 58%);
-  background-color: #eee;
+  border: 2px solid #50477F;
+  background-color: #50477F;
   border-radius: 24px;
   padding: 12px 0;
 }
@@ -676,7 +676,7 @@ header .links .link .text {
 #block-4 .viewport .bottom {
     background-color: hsl(249, 28%, 39%);
     border-top: thin solid hsl(250, 30%, 36%);
-    box-shadow: inset 0 -10px 3px -10px #222;
+    /* box-shadow: inset 0 -10px 3px -10px #222; */
 }
 
 #block-4 .viewport .bottom .boxes {
@@ -754,13 +754,12 @@ header .links .link .text {
 }
 
 #block-4 .viewport .bottom .boxes .box .button.purple {
-    background-color: hsl(249, 28%, 39%);
     color: white;
 }
 
 #block-4 .viewport .bottom .boxes .box .button.purple:hover {
   cursor: pointer;
-  background-color: #8373B5;
+  background-color: #50477F;
 }
 
 #block-4 .viewport .bottom .boxes .box .button.gray:hover {
@@ -909,7 +908,7 @@ header .links .link .text {
   background-color: #9D98B8;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1116px) {
   header .container {
     width: 100% !important;
   }
@@ -1073,7 +1072,7 @@ header .links .link .text {
   #product-arrow-left, #product-arrow-right:hover {
     cursor: pointer;
   }
-  
+
   #block-4 .products {
     width: 100%;
     text-align: center;
@@ -1091,6 +1090,10 @@ header .links .link .text {
   #block-4 .products-scroll {
     width: 500%;
     transition: margin-left .6s ease-in-out;
+  }
+
+  #block-4 .viewport .top .product-info .pane.right .buttons .button.trans {
+    background-color: white;
   }
   
   #block-4 .products .product {
