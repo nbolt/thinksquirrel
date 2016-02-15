@@ -426,7 +426,7 @@ header .links .link .text {
 }
 
 #block-4 .content {
-    width: 1116px;
+    width: 1100px;
     padding: 60px 0 30px;
     box-sizing: border-box;
 }
@@ -775,7 +775,8 @@ header .links .link .text {
 
 #block-5 .content {
   width: 1030px;
-  padding: 28px 48px 80px;
+  box-sizing: border-box;
+  padding: 60px 0;
 }
 
 #block-5 .section {
@@ -908,7 +909,7 @@ header .links .link .text {
   background-color: #9D98B8;
 }
 
-@media only screen and (max-width: 1116px) {
+@media only screen and (max-width: 1124px) {
   header .container {
     width: 100% !important;
   }
